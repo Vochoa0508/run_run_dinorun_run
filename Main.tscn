@@ -16,4 +16,6 @@ script = ExtResource("1_sfkof")
 position = Vector2(71, 490)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
-position = Vector2(64, -96)
+position = Vector2(506, -96)
+limit_top = 0
+limit_bottom = 0
