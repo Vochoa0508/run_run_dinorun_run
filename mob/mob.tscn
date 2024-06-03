@@ -19,6 +19,7 @@ texture = ExtResource("2_hws63")
 [node name="SquarA" type="CollisionShape2D" parent="."]
 position = Vector2(-64, -64)
 shape = SubResource("CircleShape2D_403c0")
+disabled = true
 debug_color = Color(0.56579, 0.557755, 0, 0.42)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
