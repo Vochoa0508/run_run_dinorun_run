@@ -11,6 +11,8 @@ func _ready():
 	
 func game_over():
 	GHUD.update_high_score_label()
+	$MOBTimer.stop()
+	GHUD.mob_counter = 0
 
 func new_game():
 	print('empieza')
@@ -23,11 +25,13 @@ func _process(delta):
 
 
 func _on_mob_timer_timeout():
-	var mob = mob_scene.instantiate()
-	mob.position.x = $player.position.x + 1500
-	mob.position.y = 650
-	add_child(mob)
-	mob.hit.connect(game_over)
-	$MOBTimer.wait_time = 2
-	print('creando enemigo')
-	
+	print(GHUD.mob_counter)
+	if GHUD.mob_counter < 2:
+		var mob = mob_scene.instantiate()
+		mob.position.x = $player.position.x + 1500
+		mob.position.y = 650
+		add_child(mob)
+		mob.hit.connect(game_over)
+		$MOBTimer.wait_time = 2
+		print('creando enemigo')
+		

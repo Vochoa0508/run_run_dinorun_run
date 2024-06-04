@@ -1,10 +1,24 @@
-[gd_scene load_steps=4 format=3 uid="uid://cp3ddd4f12mva"]
+[gd_scene load_steps=12 format=3 uid="uid://cp3ddd4f12mva"]
 
 [ext_resource type="Script" path="res://mob/mob.gd" id="1_q4hrf"]
 [ext_resource type="Texture2D" uid="uid://6qv7nhmix238" path="res://icon.svg" id="2_hws63"]
+[ext_resource type="Texture2D" uid="uid://cc1sfyp4n6ie2" path="res://Sprites/Sin rw.png" id="3_njvew"]
+[ext_resource type="Texture2D" uid="uid://phjwh4lmc5o" path="res://Sprites/rytdh.png" id="3_yp0fo"]
+[ext_resource type="Texture2D" uid="uid://bckaov4rklqa5" path="res://Sprites/Sin título.png" id="4_re7u6"]
+[ext_resource type="Texture2D" uid="uid://dd2qckvmjfu6u" path="res://Sprites/sgdher.png" id="5_li34k"]
+[ext_resource type="Texture2D" uid="uid://cfb47p78qc5fe" path="res://Sprites/sfnf.png" id="7_sjp11"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_403c0"]
 radius = 63.0317
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nla1r"]
+size = Vector2(144, 114)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q4oy1"]
+size = Vector2(144, 125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_le6l4"]
+size = Vector2(90, 106)
 
 [node name="MOB" type="Area2D"]
 script = ExtResource("1_q4hrf")
@@ -13,12 +27,82 @@ script = ExtResource("1_q4hrf")
 position = Vector2(-10, -10)
 
 [node name="SpriteA" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(-64, -64)
 texture = ExtResource("2_hws63")
 
 [node name="SquarA" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(-64, -64)
 shape = SubResource("CircleShape2D_403c0")
+disabled = true
+debug_color = Color(0.56579, 0.557755, 0, 0.42)
+
+[node name="SpriteA2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-56, -123)
+scale = Vector2(0.269231, 0.273148)
+texture = ExtResource("3_njvew")
+
+[node name="SquarA2" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-59, -126)
+scale = Vector2(0.752691, 1.01748)
+shape = SubResource("CircleShape2D_403c0")
+disabled = true
+debug_color = Color(0.56579, 0.557755, 0, 0.42)
+
+[node name="SpriteA3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-69.7463, -122.874)
+scale = Vector2(0.274053, 0.273731)
+texture = ExtResource("4_re7u6")
+
+[node name="SquarA3" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-69.7463, -122.874)
+scale = Vector2(0.848362, 0.80883)
+shape = SubResource("CircleShape2D_403c0")
+disabled = true
+debug_color = Color(0.56579, 0.557755, 0, 0.42)
+
+[node name="SpriteA4" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-74.7194, -131.006)
+scale = Vector2(0.304925, 0.416641)
+texture = ExtResource("5_li34k")
+
+[node name="SquarA4" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-72.7194, -126.006)
+shape = SubResource("RectangleShape2D_nla1r")
+disabled = true
+debug_color = Color(0.56579, 0.557755, 0, 0.42)
+
+[node name="SpriteA5" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-73.3519, -117.854)
+scale = Vector2(0.310185, 0.29697)
+texture = ExtResource("3_yp0fo")
+
+[node name="SquarA5" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-74.3519, -116.354)
+shape = SubResource("RectangleShape2D_q4oy1")
+disabled = true
+debug_color = Color(0.852554, 0.303196, 0.55143, 0.42)
+
+[node name="SpriteA6" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-56, -257.36)
+scale = Vector2(0.269231, 0.313148)
+texture = ExtResource("7_sjp11")
+
+[node name="SquarA6" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-54, -257.36)
+scale = Vector2(1.12, 1.2)
+shape = SubResource("RectangleShape2D_le6l4")
 disabled = true
 debug_color = Color(0.56579, 0.557755, 0, 0.42)
 
