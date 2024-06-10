@@ -1,92 +1,43 @@
-[gd_scene load_steps=22 format=3 uid="uid://seu4etuefnd5"]
+[gd_scene load_steps=15 format=3 uid="uid://seu4etuefnd5"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_1ussk"]
-[ext_resource type="Texture2D" uid="uid://o3s3dghchtve" path="res://dinoplayer/red.png" id="1_34va6"]
+[ext_resource type="Texture2D" uid="uid://dajr3ve5x0ncx" path="res://Sprites/Mono corredor (3).png" id="2_4567d"]
+[ext_resource type="Texture2D" uid="uid://33cx40bwq3lf" path="res://Sprites/Mono corredor (1).png" id="2_jegga"]
 [ext_resource type="AudioStream" uid="uid://bge3vutp7lr7d" path="res://dinoplayer/jump.mp3" id="3_1dmou"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8kl3k"]
-atlas = ExtResource("1_34va6")
-region = Rect2(408, 0, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7at2"]
+atlas = ExtResource("2_jegga")
+region = Rect2(64, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_n24wb"]
-atlas = ExtResource("1_34va6")
-region = Rect2(432, 0, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_2omdx"]
+atlas = ExtResource("2_4567d")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_lykh0"]
-atlas = ExtResource("1_34va6")
-region = Rect2(456, 0, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_nlyel"]
+atlas = ExtResource("2_jegga")
+region = Rect2(64, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_orwe0"]
-atlas = ExtResource("1_34va6")
-region = Rect2(480, 0, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_vrsna"]
+atlas = ExtResource("2_4567d")
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dfr6w"]
-atlas = ExtResource("1_34va6")
-region = Rect2(504, 0, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fp24"]
+atlas = ExtResource("2_4567d")
+region = Rect2(32, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_stp4k"]
-atlas = ExtResource("1_34va6")
-region = Rect2(528, 0, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_mc0od"]
+atlas = ExtResource("2_4567d")
+region = Rect2(64, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_fq8jy"]
-atlas = ExtResource("1_34va6")
-region = Rect2(552, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_uhv88"]
-atlas = ExtResource("1_34va6")
-region = Rect2(72, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wn4xp"]
-atlas = ExtResource("1_34va6")
-region = Rect2(96, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cflqu"]
-atlas = ExtResource("1_34va6")
-region = Rect2(96, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_03hq2"]
-atlas = ExtResource("1_34va6")
-region = Rect2(120, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rnb1u"]
-atlas = ExtResource("1_34va6")
-region = Rect2(144, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l52uh"]
-atlas = ExtResource("1_34va6")
-region = Rect2(168, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_av2ee"]
-atlas = ExtResource("1_34va6")
-region = Rect2(192, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_f0a3a"]
-atlas = ExtResource("1_34va6")
-region = Rect2(216, 0, 24, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6krk"]
+atlas = ExtResource("2_4567d")
+region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qxgvj"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8kl3k")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_n24wb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lykh0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_orwe0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dfr6w")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_stp4k")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fq8jy")
+"texture": SubResource("AtlasTexture_j7at2")
 }],
 "loop": true,
 "name": &"crouch",
@@ -94,7 +45,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_uhv88")
+"texture": SubResource("AtlasTexture_2omdx")
 }],
 "loop": true,
 "name": &"default",
@@ -102,7 +53,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_wn4xp")
+"texture": SubResource("AtlasTexture_nlyel")
 }],
 "loop": true,
 "name": &"jump",
@@ -110,22 +61,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cflqu")
+"texture": SubResource("AtlasTexture_vrsna")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_03hq2")
+"texture": SubResource("AtlasTexture_6fp24")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_rnb1u")
+"texture": SubResource("AtlasTexture_mc0od")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_l52uh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_av2ee")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_f0a3a")
+"texture": SubResource("AtlasTexture_k6krk")
 }],
 "loop": true,
 "name": &"run",
@@ -133,26 +78,28 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iv22h"]
-size = Vector2(43.2703, 46.5429)
+size = Vector2(36.3223, 107.667)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fvdhl"]
-size = Vector2(144, 69)
+size = Vector2(123, 111)
 
 [node name="player" type="CharacterBody2D" groups=["dinosaurio"]]
 script = ExtResource("1_1ussk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(8, 8)
+position = Vector2(0, 33)
+scale = Vector2(8.51632, 8.70145)
 sprite_frames = SubResource("SpriteFrames_qxgvj")
+animation = &"run"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(12.5, -2)
-scale = Vector2(2.75015, 2.75015)
+position = Vector2(7.15256e-07, 39.5)
+scale = Vector2(3.0835, -1.3096)
 shape = SubResource("RectangleShape2D_iv22h")
 debug_color = Color(0.407283, 0.465999, 1, 0.42)
 
 [node name="CrouchCollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(16, 33.5)
+position = Vector2(-0.5, 54.5)
 shape = SubResource("RectangleShape2D_fvdhl")
 
 [node name="AudioJump" type="AudioStreamPlayer2D" parent="."]

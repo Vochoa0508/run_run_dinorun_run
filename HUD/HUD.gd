@@ -18,7 +18,7 @@ func update_high_score_label():
 	$ButtonStart.visible = true
 	if score > high_score:
 		high_score = score
-		$HighScoreLebel.text = 'high_score: %d'%(high_score)
+		$HighScoreLebel.text = 'HighScore: %d'%(high_score)
 	
 func _on_button_start_pressed():
 	start_game.emit()

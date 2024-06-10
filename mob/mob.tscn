@@ -9,16 +9,18 @@
 [ext_resource type="Texture2D" uid="uid://cfb47p78qc5fe" path="res://Sprites/sfnf.png" id="7_sjp11"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_403c0"]
-radius = 63.0317
+radius = 47.9897
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nla1r"]
-size = Vector2(144, 114)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hggre"]
+radius = 40.497
+height = 122.719
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_q4oy1"]
-size = Vector2(144, 125)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_23gjs"]
+radius = 8.86588
+height = 18.932
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_le6l4"]
-size = Vector2(90, 106)
+size = Vector2(27.6786, 104.967)
 
 [node name="MOB" type="Area2D"]
 script = ExtResource("1_q4hrf")
@@ -46,7 +48,7 @@ texture = ExtResource("3_njvew")
 
 [node name="SquarA2" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2(-59, -126)
+position = Vector2(-64, -128)
 scale = Vector2(0.752691, 1.01748)
 shape = SubResource("CircleShape2D_403c0")
 disabled = true
@@ -69,13 +71,14 @@ debug_color = Color(0.56579, 0.557755, 0, 0.42)
 [node name="SpriteA4" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(-74.7194, -131.006)
-scale = Vector2(0.304925, 0.416641)
+scale = Vector2(0.269375, 0.33908)
 texture = ExtResource("5_li34k")
 
 [node name="SquarA4" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2(-72.7194, -126.006)
-shape = SubResource("RectangleShape2D_nla1r")
+position = Vector2(-73.3597, -123.503)
+rotation = -1.57079
+shape = SubResource("CapsuleShape2D_hggre")
 disabled = true
 debug_color = Color(0.56579, 0.557755, 0, 0.42)
 
@@ -87,20 +90,22 @@ texture = ExtResource("3_yp0fo")
 
 [node name="SquarA5" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2(-74.3519, -116.354)
-shape = SubResource("RectangleShape2D_q4oy1")
+position = Vector2(-70, -131)
+rotation = 0.261799
+scale = Vector2(8.47873, 2.63793)
+shape = SubResource("CapsuleShape2D_23gjs")
 disabled = true
 debug_color = Color(0.852554, 0.303196, 0.55143, 0.42)
 
 [node name="SpriteA6" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(-56, -257.36)
+position = Vector2(-55.9999, -287.36)
 scale = Vector2(0.269231, 0.313148)
 texture = ExtResource("7_sjp11")
 
 [node name="SquarA6" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2(-54, -257.36)
+position = Vector2(-65.4999, -287.98)
 scale = Vector2(1.12, 1.2)
 shape = SubResource("RectangleShape2D_le6l4")
 disabled = true
